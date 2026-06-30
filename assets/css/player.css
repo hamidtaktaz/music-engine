@@ -1,0 +1,217 @@
+/*
+====================================
+Music Engine Player
+RTL
+====================================
+*/
+
+#me-player{
+
+    position:fixed;
+
+    bottom:0;
+
+    right:0;
+
+    left:0;
+
+    height:90px;
+
+    background:#181818;
+
+    border-top:1px solid #2d2d2d;
+
+    display:flex;
+
+    flex-direction:row-reverse;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 20px;
+
+    z-index:999999;
+
+}
+
+/* =========================
+   Cover
+========================= */
+
+.me-player-cover{
+
+    width:60px;
+
+    height:60px;
+
+    flex-shrink:0;
+
+}
+
+.me-player-cover img{
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:10px;
+
+    object-fit:cover;
+
+}
+
+/* =========================
+   Song Info
+========================= */
+
+.me-player-info{
+
+    width:220px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    margin-right:15px;
+
+}
+
+#me-title{
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+#me-artist{
+
+    margin-top:6px;
+
+    color:#999;
+
+    font-size:13px;
+
+}
+
+/* =========================
+   Controls
+========================= */
+
+.me-player-controls{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.me-player-controls button{
+
+    width:44px;
+
+    height:44px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#303030;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-size:17px;
+
+}
+
+.me-player-controls button:hover{
+
+    background:#1DB954;
+
+}
+
+#me-play{
+
+    width:56px;
+
+    height:56px;
+
+    background:#1DB954;
+
+    font-size:20px;
+
+}
+
+/* =========================
+   Progress
+========================= */
+
+.me-player-progress{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:0 30px;
+
+}
+
+#me-current-time,
+#me-duration{
+
+    width:50px;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:13px;
+
+}
+
+#me-progress{
+
+    flex:1;
+
+    accent-color:#1DB954;
+
+    cursor:pointer;
+
+}
+
+/* =========================
+   Volume (برای آینده)
+========================= */
+
+.me-player-volume{
+
+    width:140px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
